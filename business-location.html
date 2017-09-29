@@ -119,7 +119,7 @@
         "progressbar">(Step 2 of 5 steps)<br></span>2. Business location </h1>
         
         <div class="content-p">
-            <p>Enter a location where your business is located,
+            <p>Enter a <a href="#" data-toggle="tooltip" title="" data-original-title="A particular place or position" class="">location</a> where your business is located,
             you can enter a suburb, city, town or postcode or a state or
             territory. For example, type in "Kiama" and select one of the
             matching state, postcode and suburb combinations provided. Ensure
@@ -252,6 +252,10 @@
         response: function (event, ui) { }
     };
     $("#locationTitle").autocomplete(options);
+	
+    $(function () {
+       $('[data-toggle="tooltip"]').tooltip()
+    })
 </script>
 </body>
 </html>
